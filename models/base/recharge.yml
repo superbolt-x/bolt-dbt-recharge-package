@@ -12,42 +12,27 @@ sources:
       - name: utm_tag
 
 models:
-  - name: shopify_orders
+  - name: recharge_orders
     columns:
       - name: unique_key
         tests:
           - unique
           - not_null
-  - name: shopify_line_items
+  - name: recharge_line_items
     columns:
       - name: unique_key
         tests:
           - unique
           - not_null
-  - name: shopify_daily_sales_by_order_line_item
-    columns:
-      - name: unique_key
-        tests:
-          - unique
   - name: recharge_customers
     columns:
       - name: unique_key
         tests:
           - unique
           - not_null
-  - name: shopify_daily_sales_by_customer
-    columns:
-      - name: unique_key
-        tests:
-          - unique
   - name: recharge_products
     columns:
       - name: unique_key
         tests:
           - unique
           - not_null
-  - name: shopify_daily_sales_by_product
-    columns: 
-      - name: unique_key
-        tests:
-          - unique
